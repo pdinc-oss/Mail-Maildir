@@ -1,0 +1,7 @@
+README
+Makefile.PL
+MANIFEST
+STEPS-TO-CPAN
+lib/Mail/Maildir.pm
+lib/Mail/Maildir/Plusplus.pm
+t/Maildir.t

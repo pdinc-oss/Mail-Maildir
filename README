@@ -1,0 +1,39 @@
+COPYRIGHT
+
+Copyright (c) 2004 Edward Abrams, Lycos.  All rights reserved.  This program is free software: you can redistribute 
+it and/or modify it under the same terms as Perl itself.
+
+VERSION
+
+This is version 1.0.
+
+PREREQUISITES
+
+Perl 5.  IO::Handle.  File::Copy.  File::Temp.  Sys::Hostname.  Test suite requires Test::More.  File::Path.  
+Time::HiRes is a nice-to-have.
+
+TO BUILD
+
+  perl Makefile.PL
+  make
+  make test
+  make install
+
+DESCRIPTION
+
+Mail::Maildir
+
+A filesystem-level implementation of Maildir++ format for mail folders used by qmail, courier and others.  Useful
+for scripting common events for Maildir++ mail deliveries, as well as managing the maildirsize file according to the
+Maildir++ spec (http://cr.yp.to/proto/maildir.html, http://www.inter7.com/courierimap/README.maildirquota.html).
+Useful for determining the validity of Maildir and Maildir++ folders.  Useful for validating message names.
+
+This module is not like Mail::Box, which is primarily an implementation for mail reading (that is, Mail::Box
+would lend itself directly to writing a Web UI for mail, for example).  In the context of Mail::Box, Mail::Maildir
+would be more of a module one would extend to expose the functionality of maildirs *to* Mail::Box (which to my 
+knowledge currently implements only MH and MBox formats for mail folders).  Thus, Mail::Maildir might be a useful
+utility for those who would extend Mail::Box, or other mail reading clients.
+
+TODO
+
+KNOWN BUGS
